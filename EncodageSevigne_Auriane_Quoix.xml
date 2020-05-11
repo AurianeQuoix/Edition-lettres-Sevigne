@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Documentation/out/ODD_Sevigne_Auriane_Quoix.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Version corrigée de mon encodage, suite aux commentaires d'Ariane Pinche. -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Lettres de Madame de Sévigné, de sa famille, et de ses amis</title>
+            <title type="subtitle">Edition ornée de vingt-cinq portraits dessinés par Devéria,
+               augmentée de plusieurs lettres inédites, des cent cinq lettres publiées en 1814 par
+               Klostermann, des notes et notices de Grouvelle et des réflexions de l'abbé de
+               Vauxelles ; précédées d'une nouvelle notice biographique sur Mme de Sévigné et
+               accompagnées de notes géographiques, historiques, politiques, critiques et de mœurs,
+               par M. <sic>Gault-de-Saint-Germain</sic></title>
+            <author>Marie de Rabutin-Chantal, marquise de Sévigné</author>
+            <editor>Pierre-Marie Gault de Saint-Germain</editor>
+            <!-- Bien qu'elle ait aussi été l'auteur de lettres, j'ai choisi d'encoder le nom de Mme de Simiane
+               au sein d'une balise editor, étant donné qu'elle a joué un rôle important dans l'édition des
+               lettres de sa grand-mère-->
+            <editor role="contributor">Pauline de Grignan, marquise de Simiane</editor>
+            <respStmt>
+               <resp>Encodage des lettres 144 à 147 (volume II) réalisé dans le cadre du devoir du
+                  03/02/2019 du Master 2 TNAH</resp>
+               <name>
+                  <forename>Auriane</forename>
+                  <surname>Quoix</surname>
+               </name>
+            </respStmt>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>François-Denis Dalibon</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="1823">1823</date>
+            <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k6317685j">Bibliothèque
+               Nationale de France</distributor>
+            <availability>
+               <licence>Domaine Public</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title type="main">Lettres de Madame de Sévigné, de sa famille, et de ses
+                     amis</title>
+                  <title type="subtitle">Edition ornée de vingt-cinq portraits dessinés par Devéria,
+                     augmentée de plusieurs lettres inédites, des cent cinq lettres publiées en 1814
+                     par Klostermann, des notes et notices de Grouvelle et des réflexions de l'abbé
+                     de Vauxelles ; précédées d'une nouvelle notice biographique sur Mme de Sévigné
+                     et accompagnées de notes géographiques, historiques, politiques, critiques et
+                     de mœurs, par M. <sic>Gault-de-Saint-Germain</sic></title>
+                  <author>
+                     <forename>Marie</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Rabutin-Chantal</surname>
+                     <roleName>marquise de Sévigné</roleName>
+                  </author>
+                  <editor>
+                     <forename>Pierre-Marie</forename>
+                     <surname>Gault de Saint-Germain</surname>
+                  </editor>
+                  <editor role="contributor">
+                     <forename>Pauline</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Grignan</surname>
+                     <roleName>marquise de Simiane</roleName></editor>
+                  <respStmt xml:id="GDSG">
+                     <resp>editor</resp>
+                     <name type="initials">Gault de Saint-Germain (G.D.S.G.)</name>
+                  </respStmt>
+                  <respStmt xml:id="DP">
+                     <resp/>
+                     <name type="initials">D.P.</name>
+                  </respStmt>
+                  <respStmt xml:id="M">
+                     <resp/>
+                     <name type="initials">M.</name>
+                  </respStmt>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>François-Denis Dalibon</publisher>
+                  <date type="first_letters_published">1697 <note>Une centaine de lettres furent
+                        publiées dès 1697, lors de la publication de la correspondance du comte de
+                        Bussy.</note></date>
+                  <date type="first_edition">1725 <note>première édition consacrée à la
+                        correspondance de Mme de Sévigné</note></date>
+                  <date>1823</date>
+                  <pubPlace>Paris</pubPlace>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k6317685j">Bibliothèque
+                     Nationale de France</distributor>
+                  <availability>
+                     <licence>Domaine Public</licence>
+                  </availability>
+               </publicationStmt>
+               <seriesStmt>
+                  <title type="main">Lettres de Madame de Sévigné, de sa famille, et de ses
+                     amis</title>
+                  <title type="subtitle">Edition ornée de vingt-cinq portraits dessinés par Devéria,
+                     augmentée de plusieurs lettres inédites, des cent cinq lettres publiées en 1814
+                     par Klostermann, des notes et notices de Grouvelle et des réflexions de l'abbé
+                     de Vauxelles ; précédées d'une nouvelle notice biographique sur Mme de Sévigné
+                     et accompagnées de notes géographiques, historiques, politiques, critiques et
+                     de mœurs, par M. <sic>Gault-de-Saint-Germain</sic>.</title>
+                  <biblScope unit="main">Lettres de Madame de Sévigné, de sa famille, et de ses
+                     amis</biblScope>
+                  <biblScope unit="volume" n="2">volume II</biblScope>
+                  <biblScope unit="letters" from="144" to="147">Lettres 144 à 147</biblScope>
+                  <biblScope unit="page" from="11" to="18">pp. 11-18</biblScope>
+               </seriesStmt>
+               <notesStmt>
+                  <note>Cette édition comporte douze volumes.</note>
+               </notesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Ce projet d'encodage de la correspondance de madame de Sévigné a été réalisé dans le
+               cadre du cours d'XML-TEI dispensé en master 2 Technologies numériques appliquées à
+               l'histoire de l'Ecole nationale des chartes (projet 2019-2020). L'extrait encodé
+               concerne les lettres 144 à 147 présentes dans le volume II. L'édition d'origine date
+               de 1823 et a été publiée par Dalibon. Elle est consultable sur le site de la BnF.</p>
+         </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Provence" type="former_french_province">
+                  <placeName>
+                     <country>France</country>
+                     <name>Provence</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Bretagne" type="region">
+                  <placeName>
+                     <country>France</country>
+                     <name>Bretagne</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Bourgogne" type="former_french_region">
+                  <placeName>
+                     <country>France</country>
+                     <name>Bourgogne</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Paris" type="city">
+                  <placeName>
+                     <country>France</country>
+                     <region n="a">Ile-de-France</region>
+                     <name>Paris</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Vincennes" type="city">
+                  <placeName>
+                     <country>France</country>
+                     <region n="a">Ile-de-France</region>
+                     <name>Vincennes</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Marseille" type="city">
+                  <placeName>
+                     <country>France</country>
+                     <region n="a">Provence-Alpes-Côte d’Azur</region>
+                     <name>Marseille</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Aix" type="city">
+                  <placeName>
+                     <country>France</country>
+                     <region n="a">Provence-Alpes-Côte d’Azur</region>
+                     <name>Aix-en-Provence</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Lyon" type="city">
+                  <placeName>
+                     <country>France</country>
+                     <region n="a">Auvergne-Rhône-Alpes</region>
+                     <name>Lyon</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Digne" type="town">
+                  <placeName>
+                     <country>France</country>
+                     <region n="a">Provence-Alpes-Côte d’Azur</region>
+                     <name>Digne-les-Bains</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Bourbon" type="town">
+                  <placeName>
+                     <country>France</country>
+                     <region n="a">Auvergne-Rhône-Alpes</region>
+                     <name>Bourbon-l'Archambault</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="Rhone" type="river">
+                  <placeName>
+                     <country>Suisse, </country>
+                     <region>canton du Valais</region>
+                     <region>canton de Vaud</region>
+                     <region>république et canton de Genève</region>
+                     <country>France</country>
+                     <region>Auvergne-Rhône-Alpes</region>
+                     <region>Occitanie</region>
+                     <region>Provence-Alpes-Côte d’Azur</region>
+                     <name>le Rhône</name>
+                  </placeName>
+               </place>
+
+               <place xml:id="hotel_de_La_Rochefoucauld" type="mansion">
+                  <placeName>
+                     <name>hôtel de La Rochefoucauld</name>
+                  </placeName>
+                  <note>Non localisé</note>
+               </place>
+            </listPlace>
+         </settingDesc>
+
+         <particDesc>
+            <listPerson type="family_Mme_de_Sevigne">
+               <person sex="F" xml:id="Mme_de_Sevigne">
+                  <persName>
+                     <forename>Marie</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Rabutin-Chantal</surname>
+                     <roleName>marquise de Sévigné</roleName>
+                  </persName>
+               </person>
+
+               <person sex="F" xml:id="Mme_de_Grignan">
+                  <persName>
+                     <forename>Françoise</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Grignan</surname>
+                     <roleName>comtesse de</roleName>
+                  </persName>
+               </person>
+
+               <person sex="M" xml:id="M_de_Grignan">
+                  <persName>
+                     <forename>François</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Grignan</surname>
+                     <roleName>comte de</roleName>
+                  </persName>
+               </person>
+
+               <person sex="F" xml:id="Marie-Blanche">
+                  <persName>
+                     <forename>Marie-Blanche</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Grignan</surname>
+                  </persName>
+                  <note>Née en <date when-iso="1670">1670</date>, elle est la fille de <persName
+                        ref="#Mme_de_Grignan">madame de Grignan</persName> et la petite-fille de
+                        <persName ref="#Mme_de_Sevigne">madame de Sévigné</persName>. Sa grand-mère
+                     la garde trois ans auprès d'elle, jusqu'en <date when-iso="1673">1673</date>
+                     étant donné que <persName ref="#Mme_de_Grignan">madame de Grignan</persName>
+                     est partie retrouver son mari en <placeName ref="#Provence"
+                        >Provence</placeName>.</note>
+               </person>
+
+               <person sex="M" xml:id="comte_de_Bussy">
+                  <persName>
+                     <forename>Roger</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Bussy-Rabutin</surname>
+                     <roleName>comte de Bussy</roleName>
+                  </persName>
+                  <note>Cousin de <persName ref="#Mme_de_Sevigne">madame de
+                     Sévigné</persName></note>
+               </person>
+
+               <person sex="M" xml:id="abbe_de_Coulanges">
+                  <persName>
+                     <forename>Christophe</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Coulanges</surname>
+                     <addName>abbé de Coulanges</addName>
+                  </persName>
+                  <occupation>Notre-Dame de Livry</occupation>
+                  <note>Oncle de <persName ref="#Mme_de_Sevigne">madame de Sévigné. Ces derniers
+                        sont très proches.</persName></note>
+               </person>
+
+               <listRelation>
+                  <relation name="parent_child" active="#Mme_de_Sevigne" passive="#Mme_de_Grignan"/>
+                  <relation name="married_couple" mutual="#M_de_Grignan #Mme_de_Grignan"/>
+                  <relation name="parent_child" active="#Mme_de_Grignan" passive="#Marie-Blanche"/>
+                  <relation name="grandmother_granddaughter" active="#Mme_de_Sevigne"
+                     passive="#Marie-Blanche"/>
+                  <relation name="cousins" mutual="#Mme_de_Sevigne #comte_de_Bussy"/>
+                  <relation name="uncle_niece" active="#abbe_de_Coulanges" passive="#Mme_de_Sevigne"
+                  />
+               </listRelation>
+            </listPerson>
+
+            <listPerson type="not_a_member_of_the_family">
+               <person sex="F" xml:id="Mme_de_Monaco">
+                  <persName>
+                     <forename>Catherine-Charlotte</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Gramont</surname>
+                     <roleName>princesse de Monaco</roleName>
+                  </persName>
+               </person>
+
+               <person sex="F" xml:id="princesse_de_Conde">
+                  <persName>
+                     <forename>Claire-Clémence</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Maillé</surname>
+                     <roleName>princesse de Condé</roleName>
+                  </persName>
+               </person>
+
+               <person sex="M" xml:id="M_de_La_Rochefoucauld">
+                  <persName>
+                     <forename>François</forename>
+                     <nameLink>de </nameLink>
+                     <surname>La Rochefoucauld</surname>
+                     <roleName>duc de La Rochefoucauld, prince de Marcillac</roleName>
+                  </persName>
+                  <residence ref="#hotel_de_La_Rochefoucauld"/>
+               </person>
+
+               <person sex="F" xml:id="Mademoiselle">
+                  <persName>
+                     <forename>Marie-Louise</forename>
+                     <nameLink>d'</nameLink>
+                     <surname>Orléans</surname>
+                     <roleName>princesse</roleName>
+                     <addName>Mademoiselle</addName>
+                  </persName>
+               </person>
+
+               <person sex="M" xml:id="Brancas">
+                  <persName>
+                     <forename>Charles</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Brancas</surname>
+                     <roleName>comte de</roleName>
+                  </persName>
+               </person>
+
+               <person sex="F" xml:id="comtesse_de_Fiesque">
+                  <persName>
+                     <forename>Gilonne</forename>
+                     <nameLink>d'</nameLink>
+                     <surname>Harcourt</surname>
+                     <roleName>comtesse de Fiesque</roleName>
+                     <addName>madame la Comtesse</addName>
+                  </persName>
+               </person>
+
+               <person sex="M" xml:id="marquis_de_Piennes">
+                  <persName>
+                     <forename>Louis</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Brouilly</surname>
+                     <roleName>marquis de Piennes</roleName>
+                  </persName>
+                  <note>Premier mari de la comtesse de Fiesque</note>
+               </person>
+
+               <person sex="M" xml:id="comte_de_Fiesque">
+                  <persName>
+                     <forename>Charles-Léon</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Fiesque</surname>
+                     <roleName>comte de</roleName>
+                  </persName>
+                  <note>Second mari de la comtesse de Fiesque</note>
+               </person>
+
+               <person sex="M" xml:id="Briole">
+                  <persName>
+                     <surname>Briole</surname>
+                  </persName>
+                  <note>Il s'agit peut-être du comte de Briole, également connu sous le nom de
+                     "comte de Briord".</note>
+               </person>
+
+               <person sex="F" xml:id="Mme_de_Montmorency">
+                  <persName>
+                     <roleName>madame</roleName>
+                     <nameLink>de </nameLink>
+                     <surname>Montmorency</surname>
+                  </persName>
+               </person>
+
+               <person sex="F" xml:id="Mme_de_La_Troche">
+                  <persName>
+                     <forename>Marie</forename>
+                     <nameLink>de </nameLink>
+                     <surname>La Troche</surname>
+                     <addName>Marie Goddes de La Perrière (née)</addName>
+                  </persName>
+               </person>
+
+               <person sex="F" xml:id="Mme_de_Lavardin">
+                  <persName>
+                     <roleName>madame</roleName>
+                     <nameLink>de </nameLink>
+                     <surname>Lavardin</surname>
+                  </persName>
+               </person>
+
+               <person sex="M" xml:id="Magalotti">
+                  <persName>
+                     <forename>Bardo</forename>
+                     <nameLink>di </nameLink>
+                     <surname>Bardi Magalotti</surname>
+                     <addName>M. de Magalotti</addName>
+                  </persName>
+                  <occupation>(entre autres) colonel du régiment Royal-Italien en <date
+                        when-iso="1671">1671</date></occupation>
+               </person>
+
+               <person sex="M" xml:id="docteur_Guy-Patin">
+                  <persName>
+                     <roleName>docteur</roleName>
+                     <forename>Guy</forename>
+                     <surname>Patin</surname>
+                     <addName>Guy-Patin</addName>
+                  </persName>
+                  <occupation>docteur en médecine</occupation>
+               </person>
+
+               <person sex="M" xml:id="pere_Desmares">
+                  <persName>
+                     <roleName>père</roleName>
+                     <surname>Desmares</surname>
+                  </persName>
+                  <occupation>prêtre de l'Oratoire</occupation>
+               </person>
+
+               <person sex="M" xml:id="Georget">
+                  <persName>
+                     <surname>Georget</surname>
+                  </persName>
+                  <occupation>cordonnier</occupation>
+                  <note>Cordonnier pour femmes reconnu à l'époque de <persName ref="#Mme_de_Sevigne"
+                        >Madame de Sévigné</persName></note>
+               </person>
+
+               <person sex="M" xml:id="Duval">
+                  <persName>
+                     <surname>Duval</surname>
+                  </persName>
+                  <occupation>valet-de-pied de la <persName ref="#princesse_de_Conde">princesse de
+                        Condé</persName></occupation>
+                  <note>A été condamné aux galères après s'être battu en duel avec <persName
+                        ref="#Rabutin">Rabutin</persName>, page de la <persName
+                        ref="#princesse_de_Conde">princesse de Condé.</persName></note>
+               </person>
+
+               <person sex="M" xml:id="Rabutin">
+                  <persName>
+                     <forename>Jean-Louis</forename>
+                     <nameLink>de </nameLink>
+                     <surname>Rabutin</surname>
+                  </persName>
+                  <occupation>page de la <persName ref="#princesse_de_Conde">princesse de
+                        Condé</persName></occupation>
+                  <note>S'est battu en duel avec <persName ref="#Duval">Duval</persName>,
+                     valet-de-pied de la<persName ref="#princesse_de_Conde">princesse de
+                        Condé</persName> et a été contraint par la suite de s'exiler.</note>
+               </person>
+
+               <person sex="M" xml:id="Descartes">
+                  <persName>
+                     <forename>René</forename>
+                     <surname>Descartes</surname>
+                  </persName>
+                  <occupation>philosophe, mathématicien et physicien du <time>XVIIe
+                     siècle</time></occupation>
+               </person>
+
+               <person sex="M" xml:id="Aristote">
+                  <persName>
+                     <surname>Aristote</surname>
+                  </persName>
+                  <occupation>philosophe grec de l'<time>Antiquité</time></occupation>
+               </person>
+
+               <listRelation>
+                  <relation name="married_couple" mutual="#marquis_de_Piennes #comtesse_de_Fiesque"
+                     type="first_marriage"/>
+                  <relation name="married_couple" mutual="#comte_de_Fiesque #comtesse_de_Fiesque"
+                     type="second_marriage"/>
+                  <relation name="master_servant" active="#princesse_de_Conde" passive="#Duval"/>
+                  <relation name="master_servant" active="#princesse_de_Conde" passive="#Rabutin"/>
+               </listRelation>
+
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="book" n="1">
+            <head>TOME PREMIER</head>
+            <div/>
+         </div>
+         <div type="book" n="2">
+            <head>TOME SECOND</head>
+            <div type="letter" n="144">
+               <head>LETTRE CXLIV. DE <persName n="sender">MADAME DE SÉVIGNÉ</persName> A
+                     <persName n="recipient">MADAME DE GRIGNAN</persName>.</head>
+               <opener>
+                  <dateline>
+                     <name type="place">A Paris</name>, <date when-iso="1671-04-09">jeudi 9 avril
+                        1671.</date>
+                  </dateline>
+               </opener>
+
+               <!-- D'après mes recherches, Mme de Sévigné écrivait en début de lettre, la date et le lieu d'écriture de celle-ci.
+                  Ce sont donc ces informations que j'ai décidé d'encoder dans la balise <opener> (ci-dessus). La balise <head> quant à elle contient
+                  ce qui n'est pas de la main de Mme de Sévigné, à savoir le numéro de la lettre et son titre (citant l'expéditeur et le destinataire). -->
+
+               <!-- Afin de mettre en valeur les mots en italique dans le texte d'origine,
+                  jai utilisé à la fois la balise <hi> et la balise <emph>. Lorsque l'expression s'apparentait
+                  à un jeu de mot ou à une citation, j'ai utilisé la balise <emph>. La balise <hi> a été utilisée dans les autres cas. -->
+
+               <p>Voilà <persName ref="#Magalotti">M. de Magalotti</persName> qui s'en va en
+                     <placeName ref="#Provence">Provence</placeName>, je voudrais bien aller avec
+                  lui. Je ne sais s'il sentira bien le plaisir de vous voir ; ce qui est certain,
+                  c'est que j'y serois fort sensible. Le voilà qui se joue avec <persName
+                     ref="#Marie-Blanche">ma petite-fille</persName> ; il vous trouve fort honnête
+                  femme en la regardant : pour moi, qui trouve <persName
+                     ref="#Mme_de_Grignan #M_de_Grignan">les Grignan</persName> fort beaux, je la
+                  trouve fort à mon gré. Je crois que vous serez aise de voir un homme de mérite, un
+                  homme du monde, un homme avec qui vous parlerez françois et italien si vous voulez
+                  ; un homme dont les perfections sont connues de toute la cour ; un homme
+                  enfin..... qui vous porte deux paires de souliers de <persName ref="#Georget"><hi
+                        rend="italic">Georget</hi></persName> ; que puis-je vous dire encore ? Il
+                  s'en va voir <persName ref="#Mme_de_Monaco">madame de Monaco</persName>, et je
+                  parie que vous lui écrirez par lui. Il dit que sans ma lettre il ne seroit jamais
+                  reçu de vous comme il veut l'être; enfin, il se moque de moi ; et moi, je l'envie,
+                  et je vous embrasse de tout mon cœur, mais sincèrement, et point du tout pour
+                  finir ma lettre.</p>
+            </div>
+
+            <div type="letter" n="145">
+               <head>LETTRE CXLV. DE <persName n="sender">MADAME DE SÉVIGNÉ</persName> A
+                     <persName n="recipient">MADAME DE GRIGNAN</persName>.</head>
+               <opener>
+                  <dateline>
+                     <name type="place">A Paris</name>, <date when-iso="1671-04-10">vendredi 10
+                        avril 1671.</date>
+                  </dateline>
+               </opener>
+
+               <!-- Etant donné le grand nombre de lettres publiées dans cette édition, on peut supposer que l'édition électronique
+                  proposera d'accéder à plusieurs lettres sur une même page afin de faciliter la navigation au sein du texte.
+                  Tenant compte de cela, j'ai donc choisi de la numérotation continue pour les notes de bas de page -->
+
+               <p>Je vous écrivis mercredi par la poste, hier matin par <persName ref="#Magalotti"
+                     >Magalotti</persName>, aujourd'hui encore par la poste ; mais hier au soir je
+                  perdis une belle occasion. J'allai me promener à <placeName ref="#Vincennes"
+                     >Vincennes</placeName>, en famille et en <persName ref="#Mme_de_La_Troche"
+                        ><emph rend="italic">Troche</emph></persName><note n="1" place="bottom"
+                     resp="#DP">Avec <persName ref="#Mme_de_La_Troche">madame de La
+                        Troche</persName>, son amie. <hi rend="italic">D. P.</hi></note> ; je
+                  rencontrai la chaîne des galériens, qui partoit pour <placeName ref="#Marseille"
+                     >Marseille</placeName> ; ils arriveront dans un mois. Rien n'eût été plus sûr
+                  que cette voie ; mais j'eus une autre pensée ; c'étoit de m'en aller avec eux. Il
+                  y a un certain <persName ref="#Duval"><hi rend="italic">Duval</hi></persName><note
+                     n="2" place="bottom" resp="#GDS">Si on peut s'en rapporter quelquefois au
+                     fatras épistolaire du <persName ref="#docteur_Guy-Patin">docteur
+                        Guy-Patin</persName>, il paroît que ce certain <persName ref="#Duval"
+                        >Duval</persName> étoit un valet-de-pied de la <persName
+                        ref="#princesse_de_Conde">princesse de Condé</persName>, qui venoit d'être
+                     condamné aux galères pour s'être battu en duel avec un jeune <persName
+                        ref="#Rabutin">Rabutin</persName>, page de la même princesse ; mais le crime
+                     de <persName ref="#Duval">Duval</persName> étoit accompagné de circonstances
+                     plus graves qu'un simple duel, suivant une lettre de <persName
+                        ref="#Mme_de_Montmorency">madame de Montmorency</persName> adressée au
+                        <persName ref="#comte_de_Bussy">comte de Bussy</persName>. (<hi
+                        rend="italic">Voyez</hi> la lettre de <persName ref="#Mme_de_Sevigne">madame
+                        de Sévigné</persName>, du <date when-iso="1671-01-23">23 janvier
+                     1671</date>.) <hi rend="italic">G. D. S. G.</hi></note>, qui me parut homme de
+                  bonne conversation. Vous les verrez arriver, et vous auriez été fort agréablement
+                  surprise de me voir pêle-mêle avec une troupe de femmes qui vont avec eux. Je
+                  voudrois que vous sussiez ce que m'est devenu le mot de <placeName ref="#Provence"
+                     >Provence</placeName>, de <placeName ref="#Marseille">Marseille</placeName>,
+                     d'<placeName ref="#Aix">Aix</placeName> ; le <placeName ref="#Rhone"
+                     >Rhône</placeName> seulement, ce diantre de <placeName ref="#Rhone"
+                     >Rhône</placeName>, et <placeName ref="#Lyon">Lyon</placeName>, me sont de
+                  quelque chose. La <placeName ref="#Bretagne">Bretagne</placeName> et la <placeName
+                     ref="#Bourgogne">Bourgogne</placeName> me paroissent des pays sous le pôle, où
+                  je ne prends aucun intérêt ; il faut dire comme <persName ref="#abbe_de_Coulanges"
+                     >Coulanges</persName> : <emph rend="italic">O grande puissance de mon orviétan
+                     !</emph> Vous êtes admirable, <persName ref="#Mme_de_Grignan">ma
+                     fille</persName>, de mander à <persName ref="#abbe_de_Coulanges"
+                     >l'abbé</persName><note n="3" place="bottom" resp="#DP"><persName
+                        ref="#abbe_de_Coulanges">L'abbé de Coulanges</persName>, qui passoit sa vie
+                     avec <persName ref="#Mme_de_Sevigne">madame de Sévigné</persName>, sa nièce.
+                        <hi rend="italic">D. P.</hi></note> de m'empêcher de vous faire des présents
+                  : quelle folie ! hélas ! vous en fais-je ? Un pouvoir au-dessus du sien m'empêche
+                  de vous en faire comme je voudrois. Vous appelez des présents les gazettes que je
+                  vous envoie : vous ne m'ôterez jamais de l'esprit l'envie de vous donner ; c'est
+                  un plaisir qui m'est sensible, et dont vous feriez très-bien de vous réjouir avec
+                  moi, si je me donnois souvent cette joie : cette manière de me remercier m'a
+                  extrêmement plu. <lb/>Vos lettres sont admirables, on jureroit qu'elles ne vous
+                  sont pas dictées par les dames du pays où vous êtes. Je trouve que <persName
+                     ref="#M_de_Grignan">M. de Grignan</persName>, avec tout ce qu'il vous est déjà,
+                  est encore votre vraie bonne compagnie ; c'est lui, ce me semble, qui vous entend
+                  ; conservez bien la joie de son cœur par la tendresse du vôtre, et faites votre
+                  compte que si vous ne m'aimiez pas tous deux, chacun selon votre degré de gloire,
+                  en vérité, vous seriez des ingrats. La nouvelle opinion, qu'il n'y a point
+                  d'ingratitude dans le monde, par les raisons que nous avons tant discutées, me
+                  paroît la philosophie de <persName ref="#Descartes">Descartes</persName>, et
+                  l'autre est celle d'<persName ref="#Aristote">Aristote</persName> : vous savez
+                  l'autorité que je donne à cette dernière ; j'en suis de même pour l'opinion de
+                  l'ingratitude : ceux qui disputent qu'il n'y en a pas voudroient être juges et
+                  parties. Vous seriez donc une petite ingrate, <persName ref="#Mme_de_Grignan">ma
+                     fille</persName> ; mais, par un bonheur qui fait ma joie, je vous en trouve
+                  éloignée, et cela fait aussi que, sans aucune retenue, je m'abandonne d'une
+                  étrange façon à m'approuver dans les sentiments que j'ai pour vous.</p>
+               <closer>
+                  <salute> Adieu, ma très-aimable ; je m'en vais fermer cette lettre ; je vous en
+                     écrirai encore une ce soir, où je vous rendrai compte de ma journée.</salute>
+                  <seg type="end_letter"> Nous espérons tous les jours louer votre maison ; vous
+                     croyez bien que je n'oublie rien de ce qui vous touche : je suis, sur cela,
+                     comme les gens les plus intéressés sont, pour eux-mêmes.</seg>
+               </closer>
+               
+               <!-- La lettre ci-dessus comporte une formule de salutation que j'ai encodée dans la balise <closer>. Cependant la lettre continue une fois
+                  cette formule écrite. Après plusieurs recherches, j'ai donc décidé d'encoder cette partie dans une balise <seg>.
+                  En revanche, certaines lettres ne présentent pas de réelle formule de salutation. Je n'ai donc, dans ce cas, pas ajouté de balise <closer>. -->
+            </div>
+
+            <div type="letter" n="146">
+               <!-- Pour cette partie de l'encodage, s'est posé le problème de réussir à faire apparaître le lien entre deux lettres (celle de Mme de Sévigné et
+                  celle de Mme de Fiesque). L'ouvrage met l'accent sur ce lien, dans sa présentation, les lettres ayant sans doute été écrites à la même date
+                  et chacune évoquant la lettre de l'autre.
+                  Afin de respecter cette présentation, j'ai fait le choix de créer une balise <div> (comportant le numéro de la lettre) qui englobe
+                  deux autres balises <div>, une pour chacune des lettres. -->
+               <div type="letter">
+                  <head>LETTRE CXLVI. DE <persName n="sender">MADAME DE
+                     SÉVIGNÉ</persName> A <persName n="recipient">MADAME DE
+                        GRIGNAN</persName>.</head>
+                  <opener>
+                     <dateline>
+                        <date when-iso="1671-04-10">Vendredi au soir, 10 avril 1671.</date>
+                     </dateline>
+                  </opener>
+                  <p>Je fais mon paquet chez <persName ref="#M_de_La_Rochefoucauld">M. de La
+                        Rochefoucauld</persName> qui vous embrasse de tout son cœur. Il est ravi de
+                     la réponse que vous faites aux chanoines<note n="4" place="bottom"><hi
+                           rend="italic" resp="#DP">Voyez</hi> la lettre du <date
+                           when-iso="1671-03-20">20 mars 1671</date>. <hi rend="italic">D.
+                        P.</hi></note> et au <persName ref="#pere_Desmares">père Desmares</persName>
+                     : il y a plaisir à vous mander des bagatelles, vous y répondez très-bien. Il
+                     vous prie de croire que vous êtes encore toute vive dans son souvenir ; s'il
+                     apprend quelques nouvelles dignes de vous, il vous les fera savoir. Il est dans
+                     son <placeName ref="#hotel_de_La_Rochefoucauld">hôtel de La
+                        Rochefoucauld</placeName>, n'ayant plus d'espérance de marcher ; son château
+                     en Espagne, c'est de se faire porter dans les maisons, ou dans son carrosse
+                     pour prendre l'air ; il parle d'aller aux eaux : je tâche de l'envoyer à
+                        <placeName ref="#Digne">Digne</placeName>, et d'autres à <placeName
+                        ref="#Bourbon">Bourbon</placeName>. J'ai été chez <persName
+                        ref="#Mademoiselle">Mademoiselle</persName>, qui est toujours malade ; j'ai
+                     dîné en <emph rend="italic">bavardin</emph><note n="5" place="bottom"
+                        resp="#DP">Chez <persName ref="#Mme_de_Lavardin">madame de
+                           Lavardin</persName>, qui aimoit extrêmement les nouvelles. <hi
+                           rend="italic">D. P.</hi></note>, mais si purement que j'en ai pensé
+                     mourir ; tous nos commensaux nous ont fait faux bond ; nous n'avons fait que
+                        <emph rend="italic">bavardiner</emph>, et nous n'avons point causé comme les
+                     autres jours. <lb/><persName ref="#Brancas">Brancas</persName> versa, il y a
+                     trois ou quatre jours dans un fossé ; il s'y établit si bien, qu'il demandoit à
+                     ceux qui allèrent le secourir ce qu'ils désiroient de son service : toutes ses
+                     glaces étoient cassées, et sa tête l'auroit été s'il n'étoit plus heureux que
+                     sage : toute cette aventure n'a fait aucune distraction à sa rêverie. Je lui ai
+                     mandé ce matin que je lui apprenois qu'il avoit versé, qu'il avoit pensé se
+                     rompre le cou, qu'il étoit le seul dans <placeName ref="#Paris"
+                        >Paris</placeName> qui ne sût point cette nouvelle, et que je lui en voulois
+                     marquer mon inquiétude : j'attends sa réponse. Voilà <persName
+                        ref="#comtesse_de_Fiesque">madame la comtesse (<hi rend="italic">de
+                           Fiesque</hi>)</persName> et <persName ref="#Briole">Briole</persName>,
+                     qui vous font trois cents compliments.</p>
+                  <closer>
+                     <salute> Adieu, ma très-chère enfant, je m'en vais fermer mon paquet. Comme je
+                        suis assurée que vous ne doutez point de mon amitié, je ne vous en dirai
+                        rien ce soir.</salute>
+                  </closer>
+               </div>
+
+               <div type="letter">
+                  <head><persName n="sender">MADAME DE FIESQUE</persName>.</head>
+                  <p><persName ref="#Mme_de_Sevigne">Madame la Comtesse</persName><note n="6"
+                        place="bottom" resp="#M"><persName ref="#comtesse_de_Fiesque"
+                              ><sic>Gillonne</sic> d'Harcourt</persName>, veuve du <persName
+                           ref="#marquis_de_Piennes">marquis de Piennes</persName>, épousa en
+                        secondes noces <persName ref="#comte_de_Fiesque">Charles-Léon, comte de
+                           Fiesque</persName>. Elle mourut en <date when-iso="1699">1699</date>,
+                        âgée de 80 ans. On la connoissoit dans le monde sous le nom de <persName
+                           ref="#comtesse_de_Fiesque"><hi rend="italic">madame la
+                           Comtesse</hi></persName>.<hi rend="italic"> M.</hi></note> ne peut pas
+                     voir une lettre qui vous va trouver sans y mettre quelque chose du sien, quand
+                     ce ne seroit qu'un compliment sur les cinq mille francs d'augmentation. De
+                     l'humeur dont vous la connoissez, vous jugez aisément qu'elle trouve un
+                     compliment mieux fondé sur les cinq mille francs, que sur cinq cent mille
+                     admirations et autant de harangues que vos perfections et vos dignités vous ont
+                     attirées.</p>
+               </div>
+            </div>
+
+            <div type="letter" n="147">
+               <head>LETTRE CXLVII. DE <persName n="sender">MADAME DE SÉVIGNÉ</persName>
+                  A <persName n="recipient">MADAME DE GRIGNAN</persName>.</head>
+               <opener>
+                  <dateline>
+                     <name type="place">A Paris</name>, <date when-iso="1671-04-12">dimanche 12
+                        avril 1671.</date>
+                  </dateline>
+               </opener>
+               <p>Je vous écris tous les jours ; c'est une joie qui me rend très-favorable à tous
+                  ceux qui me demandent des lettres : ils veulent en avoir pour paroître devant vous
+                  ; et moi, je ne demande pas mieux. Celle-ci vous sera rendue par M. de..... ; je
+                  veux mourir si je sais son nom ; mais enfin, c'est un fort honnête homme qui me
+                  paroît avoir de l'esprit, que nous avons vu ici ensemble : son visage vous est
+                  connu ; pour moi, je n'ai pas eu l'esprit d'appliquer son nom dessus. N'allez pas
+                  prendre patron sur mes lettres : elles sont infinies, je n'ai que ce plaisir ; les
+                  vôtres sont d'une grandeur qui m'étonne déjà assez ; je ne sais quand je
+                  m'ennuierai en les lisant. Si <persName ref="#M_de_Grignan">M. de
+                     Grignan</persName>, qui dit qu'on ne peut aimer les longues lettres, avoit
+                  jamais eu cette pensée quand il recevoit les vôtres, je présenterois requête pour
+                  vous séparer, et j'irois vous ôter à lui, au lieu d'aller en <placeName
+                     ref="#Bretagne">Bretagne</placeName>. Je fus hier au soir brouillée avec
+                     <persName ref="#Brancas">Brancas</persName>, pour avoir dit, à ce qu'il
+                  prétend, une grossièreté sur l'amitié, que personne n'entendit et que je
+                  n'entendis pas moi-même : c'étoit le couronnement du crime ; il sortit dans une
+                  vraie colère. Ce sont des délicatesses incommodes ; je ne les ai pas pour lui, et
+                  ne les ai que trop pour une certaine beauté que j'aime plus que ma vie, et que
+                  j'embrasse de tout mon cœur.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
